@@ -1,6 +1,5 @@
 // Step 1:
 // Use the following Audio file below:
-$(document).ready(function(){
 
 var audio = new Audio("raven.mp3");
 
@@ -16,28 +15,19 @@ var audio = new Audio("raven.mp3");
 // Step 3:
 // Fill in the blanks to these functions.
 function fiveSeconds() {
-  $('#time-left').html('<h2>About 10 seconds left suckas!</h2>');
   // in the element with an id of `time-left` add an h2 saying About 10 Seconds Left!
   // console log 10 seconds left
 }
-setTimeout(fiveSeconds, 5000);
 
 function tenSeconds() {
-  $('#time-left').html('<h2>About 5 seconds left!</h2>');
   // in the element with an id of `time-left` add an h2 saying About 5 Seconds Left!
   // console log 5 seconds left
 }
-setTimeout(tenSeconds, 10000);
 
 function timeUp() {
-  $('#time-left').html('<h2>Time\'s Up Son!</h2>');
-  console.log('Done');
   // in the element with an id of `time-left` add an h2 saying Time's Up!
   // console log done
 
   // The following line will play the audio file above
   audio.play();
 }
-
-setTimeout(timeUp, 15000);
-})

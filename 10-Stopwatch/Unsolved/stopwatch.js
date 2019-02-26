@@ -20,34 +20,27 @@ function reset() {
 
   time = 0;
   lap = 1;
-  $('#display').text('00:00');
-  $('#laps').text('');
 
   //  TODO: Change the "display" div to "00:00."
 
 }
 
 function start() {
- 
 
   //  TODO: Use setInterval to start the count here and set the clock to running.
   if (!clockRunning) {
-    intervalId=setInterval(count,1000);
-    clockRunning = !clockRunning;
+
   }
 
 }
 function stop() {
-  clearInterval(intervalId);
-  clockRunning = !clockRunning;
 
   //  TODO: Use clearInterval to stop the count here and set the clock to not be running.
 
 }
 
 function recordLap() {
-  $('#laps').html('Lap '+lap+': '+time);
-  lap++;
+
   //  TODO: Get the current time, pass that into the timeConverter function,
   //        and save the result in a variable.
 
@@ -56,9 +49,7 @@ function recordLap() {
   //  TODO: Increment lap by 1. Remember, we can't use "this" here.
 }
 function count() {
-  intervalId = setInterval(increment, 1000);
-  time++;
-  
+
   //  TODO: increment time by 1, remember we cant use "this" here.
 
   //  TODO: Get the current time, pass that into the timeConverter function,

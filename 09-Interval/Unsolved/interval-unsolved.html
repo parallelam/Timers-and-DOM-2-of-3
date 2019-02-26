@@ -25,19 +25,15 @@
     <script type="text/javascript">
 
     var number = 100;
-    var isRunning = false;
-    
+
     var intervalId;
 
     $("#stop").on("click", stop);
 
     $("#resume").on("click", run);
-    console.log(isRunning);
 
     function run() {
       intervalId = setInterval(decrement, 1000);
-      isRunning = true;
-      console.log(isRunning);
     }
 
     function decrement() {

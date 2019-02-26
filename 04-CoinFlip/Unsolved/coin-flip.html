@@ -65,16 +65,8 @@
     var tailsCount = 0;
     var wins = 0;
     var losses = 0;
-    
 
     function flipThatCoin(result) {
-      var randomNumber = [Math.floor(Math.random() * 2)];
-      if (randomNumber === 0){
-        document.getElementById('#coin-image').innerHTML = "<img src ='http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg'>";
-
-      } else if (result === randomNumber) {
-
-      }
 
       //  STEP ONE:
 
@@ -119,11 +111,6 @@
     });
 
     $("#tails").on("click", function() {
-      tailsCount++;
-      $("#tails-chosen").text(tailsCount);
-      $("#guess").html("<b>Tails</b>");
-      flipThatCoin(1);
-    });
 
       //  STEP FOUR:
 
